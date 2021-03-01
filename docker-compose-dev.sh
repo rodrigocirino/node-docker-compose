@@ -23,9 +23,9 @@ EOF
 
 
 # -----------------------------------------------------------------------------
-# RUN ATTACH DEBUG
-# ACTIVE NODEMON
-# MAP VOLUME LOCAL TO REMOTE
+# RECREATE node_modules
+# NPM Install dependencies locally
+# RUN docker-compose for dev stage
 rm -rf app/node_modules ; rm -rf node_modules ;
 rm app/package-lock.json ; rm package-lock.json ;
 cd app
