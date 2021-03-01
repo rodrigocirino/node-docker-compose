@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+
+  nodeapp:
+    container_name: nodeapp-dev
+    build:
+      context: ./
+    ports:
+      - "8080:8080" # http port
+      - "9000:9000" # debug port
+    networks:
+      - app-network
+    restart: on-failure
+    volumes:
+      - ./:/usr/src/app # obrigatory run {npm install} localy! to map local to remoto
+    # environment:
+    #   - NODE_ENV=development # already loaded in scripts package.json
+    # env_file:
+    #   - ./app/.env.development # already loaded for index.js
+
+networks:
+  app-network:
+    driver: bridge

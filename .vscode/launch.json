@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // "debug": "NODE_ENV=development nodemon --inspect-brk=0.0.0.0:9000 index.js",
+            "name": "Attach to 9000 Docker Port",
+            "type": "node",
+            "request": "attach",
+            "port": 9000,
+            "address": "localhost",
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "/",
+            "protocol": "inspector"
+          }
+    ]
+}
