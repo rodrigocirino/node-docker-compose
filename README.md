@@ -1,5 +1,13 @@
 # pipeline-node-aws
 
+### Versão 1
+
+Utilize esta versão se não for usar lambdas nem serverless
+
+> https://github.com/rodrigocirino/pipeline-node-aws/releases/tag/version1
+> https://github.com/rodrigocirino/pipeline-node-aws/tree/version1
+
+
 # RUN
 
 > Test local
