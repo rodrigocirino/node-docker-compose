@@ -1,15 +1,11 @@
 # pipeline-node-aws
 
-### Versão 1
+## Versão 1 - Node Http app
 
-Utilize esta versão se não for usar lambdas nem serverless
-
-> https://github.com/rodrigocirino/pipeline-node-aws/releases/tag/version1
-
-> https://github.com/rodrigocirino/pipeline-node-aws/tree/version1
+Utilize esta versão se não for usar lambdas nem serverless [release-1](https://github.com/rodrigocirino/pipeline-node-aws/releases/tag/version1) or [tree-view](https://github.com/rodrigocirino/pipeline-node-aws/tree/version1)
 
 
-# RUN
+## RUN
 
 > Test local
 
@@ -35,13 +31,13 @@ $ docker-compose up
 Test again
 ```
 
-# Problems with PORT? Check here:
+### Problems with PORT? Check here:
 
-- docker-compose.yml (ports, command)
-- app/index.js
-- app/.env.development
-- app/Dockerfile (expose)
-- app/package.json
+    - docker-compose.yml (ports, command)
+    - app/index.js
+    - app/.env.development
+    - app/Dockerfile (expose)
+    - app/package.json
 
 # -------------------------------------------------------------
 
