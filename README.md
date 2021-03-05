@@ -1,4 +1,4 @@
-# pipeline-node-aws
+# Starter to node + docker projects
 
 ### Release 1
 
