@@ -27,11 +27,14 @@ EOF
 # NPM Install dependencies locally
 # RUN docker-compose for dev stage
 rm -rf app/node_modules ; rm -rf node_modules ;
-rm app/package-lock.json ; rm package-lock.json ;
+rm -f app/package-lock.json ; rm -f package-lock.json ;
 cd app
 npm install
 cd ..
 docker-compose -f ./app/docker-compose-dev.yml up --build
+
+# Test with
+# curl --location --request GET 'http://localhost:8080/hello/pt' | jq
 # -----------------------------------------------------------------------------
 
 

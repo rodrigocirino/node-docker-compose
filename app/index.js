@@ -1,4 +1,4 @@
- 
+
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
@@ -7,7 +7,7 @@ const dotenv = require("dotenv");
 const envfile_stage = process.env.NODE_ENV ? '.'+process.env.NODE_ENV : '';
 dotenv.config(
   {
-    path: path.join(__dirname + `/.env${envfile_stage}`), 
+    path: path.join(__dirname + `/.env${envfile_stage}`),
     debug: process.env.DEBUG
   }
 );
@@ -41,6 +41,9 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
+
+//const serverless = require('serverless-http');
+//module.exports.handler = serverless(app);
 
 // Access
 // http://localhost:8080/hello/es

@@ -7,31 +7,31 @@ Utilize esta versão se não for usar lambdas nem serverless [release-1](https:/
 
 ## RUN
 
-> Test local
+### [DEV] Run local docker-compose + debugger + hotreload files + nodemon
 
 ```bash
-$ cd app
-$ npm install
-$ npm run debug
-1 - Access http://localhost:8080/hello/es
-2 - Teste debugger in vscode attach
+$ ./docker-compose-dev.sh
+# Test
+$ curl --location --request GET 'http://localhost:8080/hello/pt' | jq
 ```
 
-> Test With Docker + Nodemon + Hotreload
-
-```bash
-$ ./docker-compose.sh
-Test again
-```
-
-> Test remote with full docker, no volumes
+### [PROD] Run full in Docker Remote containers (NO hotreload files, NO nodemon support)
 
 ```bash
 $ docker-compose up
-Test again
 ```
 
-### Problems with PORT? Check here:
+### [NO-DOCKER] Run with NO Docker, only local npm, and local node server client
+
+```bash
+$ cd app
+$ npm i
+$ npm run debug
+# Teste debugger in VsCode attach to port
+```
+
+
+#### Problems with PORT? `${pkill node}` or Check here:
 
     - docker-compose.yml (ports, command)
     - app/index.js
