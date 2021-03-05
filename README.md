@@ -1,9 +1,6 @@
 # Starter to node + docker projects
 
-### Release 1
-
-Use this: [release-1](https://github.com/rodrigocirino/pipeline-node-aws/releases/tag/v1.0) or [tree-view](https://github.com/rodrigocirino/pipeline-node-aws/tree/v1.0)
-
+---
 
 ## Run
 
@@ -30,6 +27,7 @@ $ npm run debug
 # Teste debugger in VsCode attach to port
 ```
 
+---
 
 #### Problems with PORT? `${pkill node}` or Check here:
 
