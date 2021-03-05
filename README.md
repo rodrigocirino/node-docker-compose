@@ -12,13 +12,13 @@ $ ./docker-compose-dev.sh
 $ curl --location --request GET 'http://localhost:8080/hello/pt' | jq
 ```
 
-### [Prod] Run full in Docker Remote containers (No hotreload files. No nodemon support)
+#### [Prod] Run full in Docker Remote containers (No hotreload files. No nodemon support)
 
 ```bash
 $ docker-compose up
 ```
 
-### [No-Docker] Run with NO Docker, only local npm, and local node server client
+#### [No-Docker] Run with NO Docker, only local npm, and local node server client
 
 ```bash
 $ cd app
@@ -29,7 +29,7 @@ $ npm run debug
 
 ---
 
-#### Problems with PORT? `${pkill node}` or Check here:
+##### Problems with PORT? `${pkill node}` or Check here:
 
     - docker-compose.yml (ports, command)
     - app/index.js
