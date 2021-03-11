@@ -29,7 +29,7 @@ $ npm run debug
 
 ---
 
-##### Problems with PORT? `${pkill node}` or Check here:
+##### Do you want to change the port? First `${pkill node}` and Check here:
 
     - docker-compose.yml (ports, command)
     - app/index.js
