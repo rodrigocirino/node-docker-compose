@@ -26,8 +26,11 @@ EOF
 # RECREATE node_modules
 # NPM Install dependencies locally
 # RUN docker-compose for dev stage
-rm -rf app/node_modules ; rm -rf node_modules ;
-rm -f app/package-lock.json ; rm -f package-lock.json ;
+# clean
+find . -name 'node_modules' -exec rm -rfv {} \;
+find . -type f -name "package-lock.json" -exec rm -fv {} \; 
+
+# install
 cd app
 npm install
 cd ..
